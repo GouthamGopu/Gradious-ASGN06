@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Flight Booking Form</h2>
+        <p>Please fill out the form below to book your flight.</p>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <div class="row">
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Departure City" required>
+                <input type="text" placeholder="Destination City" required>
+            </div>
+            <div class="row">
+                <input type="date" placeholder="Departure Date" required>
+                <input type="date" placeholder="Return Date" required>
+            </div>
+            <label>Gender:</label>
+            <div class="gender-options">
+              <div><input type="radio" name="gender" value="Male" required> Male</div>
+              <div><input type="radio" name="gender" value="Female" required> Female</div>
+              <div><input type="radio" name="gender" value="Other" required> Other</div>
+            </div>
+            <label>Class</label>
+            <div class="class-options">
+              <div>
+                <input type="checkbox"> Economy
+              </div>
+              <div>
+                <input type="checkbox"> Business
+              </div>
+              <div>
+                <input type="checkbox"> First Class
+              </div>
+            </div>
+            <div class="terms">
+                <input type="checkbox" required> I have read and accept the terms and conditions.
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
